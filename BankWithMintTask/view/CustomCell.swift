@@ -6,4 +6,9 @@
 //  Copyright © 2020 css. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class CustomCell: UITableViewCell {
+    
+  
+}

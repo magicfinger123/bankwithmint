@@ -14,7 +14,7 @@ enum GithuService {
 }
 extension GithuService:TargetType{
     var baseURL: URL {
-        return URL(string: "https://api.github.com/repos/rails/rails/commits?page=0&per_page=2")!
+        return URL(string: "https://api.github.com/repos/rails/rails/commits?page=0&per_page=25")!
     }
     var path: String {
         return ""

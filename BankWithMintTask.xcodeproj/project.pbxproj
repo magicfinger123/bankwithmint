@@ -19,6 +19,8 @@
 		B76072B425094A1D00FE0DB9 /* BankWithMintTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76072B325094A1D00FE0DB9 /* BankWithMintTaskUITests.swift */; };
 		B76072C72509503300FE0DB9 /* githubApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76072C62509503300FE0DB9 /* githubApiModel.swift */; };
 		B76072C9250950E200FE0DB9 /* GithubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76072C8250950E200FE0DB9 /* GithubService.swift */; };
+		B76072CC25095FCB00FE0DB9 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76072CB25095FCB00FE0DB9 /* CustomCell.swift */; };
+		B76072CE250966D200FE0DB9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76072CD250966D200FE0DB9 /* TableViewCell.swift */; };
 		D4B1EF899ABFD43D37C27C62 /* Pods_BankWithMintTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E053FB8238E01481B7E934 /* Pods_BankWithMintTaskTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,8 @@
 		B76072B525094A1D00FE0DB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B76072C62509503300FE0DB9 /* githubApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = githubApiModel.swift; sourceTree = "<group>"; };
 		B76072C8250950E200FE0DB9 /* GithubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubService.swift; sourceTree = "<group>"; };
+		B76072CB25095FCB00FE0DB9 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		B76072CD250966D200FE0DB9 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		D0BFE2E9EBA53D25958129D6 /* Pods-BankWithMintTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankWithMintTask.release.xcconfig"; path = "Target Support Files/Pods-BankWithMintTask/Pods-BankWithMintTask.release.xcconfig"; sourceTree = "<group>"; };
 		DEBB0ACB510A605BD610AAE2 /* Pods-BankWithMintTask-BankWithMintTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankWithMintTask-BankWithMintTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-BankWithMintTask-BankWithMintTaskUITests/Pods-BankWithMintTask-BankWithMintTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E0E053FB8238E01481B7E934 /* Pods_BankWithMintTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankWithMintTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,14 +147,13 @@
 		B760729025094A1900FE0DB9 /* BankWithMintTask */ = {
 			isa = PBXGroup;
 			children = (
+				B76072CA25095FB400FE0DB9 /* view */,
 				B76072C525094F6600FE0DB9 /* controller */,
 				B76072C425094F4E00FE0DB9 /* storyboard */,
 				B76072C325094F4600FE0DB9 /* model */,
 				B76072C125094F3000FE0DB9 /* network */,
 				B760729125094A1900FE0DB9 /* AppDelegate.swift */,
 				B760729325094A1900FE0DB9 /* SceneDelegate.swift */,
-				B760729525094A1900FE0DB9 /* ViewController.swift */,
-				B760729725094A1900FE0DB9 /* Main.storyboard */,
 				B760729A25094A1C00FE0DB9 /* Assets.xcassets */,
 				B760729C25094A1C00FE0DB9 /* LaunchScreen.storyboard */,
 				B760729F25094A1C00FE0DB9 /* Info.plist */,
@@ -195,6 +198,7 @@
 		B76072C425094F4E00FE0DB9 /* storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				B760729725094A1900FE0DB9 /* Main.storyboard */,
 			);
 			path = storyboard;
 			sourceTree = "<group>";
@@ -202,8 +206,18 @@
 		B76072C525094F6600FE0DB9 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				B760729525094A1900FE0DB9 /* ViewController.swift */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		B76072CA25095FB400FE0DB9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				B76072CB25095FCB00FE0DB9 /* CustomCell.swift */,
+				B76072CD250966D200FE0DB9 /* TableViewCell.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,6 +463,8 @@
 				B76072C72509503300FE0DB9 /* githubApiModel.swift in Sources */,
 				B760729225094A1900FE0DB9 /* AppDelegate.swift in Sources */,
 				B76072C9250950E200FE0DB9 /* GithubService.swift in Sources */,
+				B76072CC25095FCB00FE0DB9 /* CustomCell.swift in Sources */,
+				B76072CE250966D200FE0DB9 /* TableViewCell.swift in Sources */,
 				B760729425094A1900FE0DB9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

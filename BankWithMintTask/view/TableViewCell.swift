@@ -10,15 +10,17 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet var authorName: UILabel!
+    
+    @IBOutlet var authorEmail: UILabel!
+    
+    @IBOutlet var commitDate: UILabel!
+    
+    @IBOutlet var commitMesaage: UILabel!
+    
+    func setCommits(commit:RequestByUserElement) {
+        authorName.text = commit.commit?.author?.name
+        authorEmail.text = commit.commit?.author?.email
+        commitDate.text = commit.commit?.author?.date
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }
