@@ -18,32 +18,36 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         tableViewCell.delegate = self
         tableViewCell.dataSource = self
+        getGitService()
         
-        githubCommits.request(.getCommits) { (result) in
-            switch result {
-            case .success(let response):
-              var parsed:Data?
-              let parse :JSON = JSON(response.data as Any)
-              do{
-              parsed =  try parse.rawData()
-              }catch let err{
-                 print(err)
-              }
-              do{
-              let rdata = try JSONDecoder().decode(Array<RequestByUserElement>.self, from: parsed!)
-                    self.commits = rdata
-                   // print("response \(self.commits[0].url)")
-                self.tableViewCell.reloadData()
-                    }catch let err{
-                                    print(err)
-                                 }
-                break
-            case .failure(let error):
-                print("moya error",error)
-                break
-            }
-        }
+      
     }
+    func getGitService(){
+        githubCommits.request(.getCommits) { (result) in
+                  switch result {
+                  case .success(let response):
+                    var parsed:Data?
+                    let parse :JSON = JSON(response.data as Any)
+                    do{
+                    parsed =  try parse.rawData()
+                    }catch let err{
+                       print(err)
+                    }
+                    do{
+                    let rdata = try JSONDecoder().decode(Array<RequestByUserElement>.self, from: parsed!)
+                          self.commits = rdata
+                         // print("response \(self.commits[0].url)")
+                      self.tableViewCell.reloadData()
+                          }catch let err{
+                                          print(err)
+                                       }
+                      break
+                  case .failure(let error):
+                      print("moya error",error)
+                      break
+                  }
+              }
+     }
 
 
 }
