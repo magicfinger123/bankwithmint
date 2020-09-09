@@ -22,5 +22,6 @@ class TableViewCell: UITableViewCell {
         authorName.text = commit.commit?.author?.name
         authorEmail.text = commit.commit?.author?.email
         commitDate.text = commit.commit?.author?.date
+        commitMesaage.text = commit.commit?.message
     }
 }
