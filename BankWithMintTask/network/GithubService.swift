@@ -17,9 +17,8 @@ extension GithuService:TargetType{
         return URL(string: "https://api.github.com/repos/rails/rails/commits?page=0&per_page=2")!
     }
     var path: String {
-        return "/load_data.php"
+        return ""
     }
-    
     var method: Moya.Method {
         switch self {
         case .getCommits:
@@ -33,6 +32,7 @@ extension GithuService:TargetType{
     var task: Task {
         switch self {
         case .getCommits:
+            print("request \(Task.requestPlain)")
             return .requestPlain
            }
     }
