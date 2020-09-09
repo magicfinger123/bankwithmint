@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85304B727171A659B3177D7C /* Pods_BankWithMintTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00811F5CD476856BC783F69F /* Pods_BankWithMintTask.framework */; };
+		A54C59E8E06A9F8F51AEBEE2 /* Pods_BankWithMintTask_BankWithMintTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F839924D53C0CFC06D14E96A /* Pods_BankWithMintTask_BankWithMintTaskUITests.framework */; };
 		B760729225094A1900FE0DB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760729125094A1900FE0DB9 /* AppDelegate.swift */; };
 		B760729425094A1900FE0DB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760729325094A1900FE0DB9 /* SceneDelegate.swift */; };
 		B760729625094A1900FE0DB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760729525094A1900FE0DB9 /* ViewController.swift */; };
@@ -15,6 +17,9 @@
 		B760729E25094A1C00FE0DB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B760729C25094A1C00FE0DB9 /* LaunchScreen.storyboard */; };
 		B76072A925094A1D00FE0DB9 /* BankWithMintTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76072A825094A1D00FE0DB9 /* BankWithMintTaskTests.swift */; };
 		B76072B425094A1D00FE0DB9 /* BankWithMintTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76072B325094A1D00FE0DB9 /* BankWithMintTaskUITests.swift */; };
+		B76072C72509503300FE0DB9 /* githubApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76072C62509503300FE0DB9 /* githubApiModel.swift */; };
+		B76072C9250950E200FE0DB9 /* GithubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76072C8250950E200FE0DB9 /* GithubService.swift */; };
+		D4B1EF899ABFD43D37C27C62 /* Pods_BankWithMintTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E053FB8238E01481B7E934 /* Pods_BankWithMintTaskTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00811F5CD476856BC783F69F /* Pods_BankWithMintTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankWithMintTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A51126773902BDD6E65247 /* Pods-BankWithMintTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankWithMintTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-BankWithMintTaskTests/Pods-BankWithMintTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9DD91A2690E757BD04D2787B /* Pods-BankWithMintTask-BankWithMintTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankWithMintTask-BankWithMintTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-BankWithMintTask-BankWithMintTaskUITests/Pods-BankWithMintTask-BankWithMintTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B001AE326287EB77B558D374 /* Pods-BankWithMintTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankWithMintTaskTests.release.xcconfig"; path = "Target Support Files/Pods-BankWithMintTaskTests/Pods-BankWithMintTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		B760728E25094A1900FE0DB9 /* BankWithMintTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankWithMintTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B760729125094A1900FE0DB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B760729325094A1900FE0DB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +58,13 @@
 		B76072AF25094A1D00FE0DB9 /* BankWithMintTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankWithMintTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B76072B325094A1D00FE0DB9 /* BankWithMintTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankWithMintTaskUITests.swift; sourceTree = "<group>"; };
 		B76072B525094A1D00FE0DB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B76072C62509503300FE0DB9 /* githubApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = githubApiModel.swift; sourceTree = "<group>"; };
+		B76072C8250950E200FE0DB9 /* GithubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubService.swift; sourceTree = "<group>"; };
+		D0BFE2E9EBA53D25958129D6 /* Pods-BankWithMintTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankWithMintTask.release.xcconfig"; path = "Target Support Files/Pods-BankWithMintTask/Pods-BankWithMintTask.release.xcconfig"; sourceTree = "<group>"; };
+		DEBB0ACB510A605BD610AAE2 /* Pods-BankWithMintTask-BankWithMintTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankWithMintTask-BankWithMintTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-BankWithMintTask-BankWithMintTaskUITests/Pods-BankWithMintTask-BankWithMintTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0E053FB8238E01481B7E934 /* Pods_BankWithMintTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankWithMintTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F839924D53C0CFC06D14E96A /* Pods_BankWithMintTask_BankWithMintTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankWithMintTask_BankWithMintTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC1D6BB50C82D3617660B3ED /* Pods-BankWithMintTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankWithMintTask.debug.xcconfig"; path = "Target Support Files/Pods-BankWithMintTask/Pods-BankWithMintTask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85304B727171A659B3177D7C /* Pods_BankWithMintTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4B1EF899ABFD43D37C27C62 /* Pods_BankWithMintTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +88,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A54C59E8E06A9F8F51AEBEE2 /* Pods_BankWithMintTask_BankWithMintTaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B8AFEF4586E7A4E6D3A466B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00811F5CD476856BC783F69F /* Pods_BankWithMintTask.framework */,
+				F839924D53C0CFC06D14E96A /* Pods_BankWithMintTask_BankWithMintTaskUITests.framework */,
+				E0E053FB8238E01481B7E934 /* Pods_BankWithMintTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		797585459A8C525FDAF37B34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC1D6BB50C82D3617660B3ED /* Pods-BankWithMintTask.debug.xcconfig */,
+				D0BFE2E9EBA53D25958129D6 /* Pods-BankWithMintTask.release.xcconfig */,
+				DEBB0ACB510A605BD610AAE2 /* Pods-BankWithMintTask-BankWithMintTaskUITests.debug.xcconfig */,
+				9DD91A2690E757BD04D2787B /* Pods-BankWithMintTask-BankWithMintTaskUITests.release.xcconfig */,
+				56A51126773902BDD6E65247 /* Pods-BankWithMintTaskTests.debug.xcconfig */,
+				B001AE326287EB77B558D374 /* Pods-BankWithMintTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B760728525094A1900FE0DB9 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +125,8 @@
 				B76072A725094A1D00FE0DB9 /* BankWithMintTaskTests */,
 				B76072B225094A1D00FE0DB9 /* BankWithMintTaskUITests */,
 				B760728F25094A1900FE0DB9 /* Products */,
+				797585459A8C525FDAF37B34 /* Pods */,
+				2B8AFEF4586E7A4E6D3A466B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +143,10 @@
 		B760729025094A1900FE0DB9 /* BankWithMintTask */ = {
 			isa = PBXGroup;
 			children = (
+				B76072C525094F6600FE0DB9 /* controller */,
+				B76072C425094F4E00FE0DB9 /* storyboard */,
+				B76072C325094F4600FE0DB9 /* model */,
+				B76072C125094F3000FE0DB9 /* network */,
 				B760729125094A1900FE0DB9 /* AppDelegate.swift */,
 				B760729325094A1900FE0DB9 /* SceneDelegate.swift */,
 				B760729525094A1900FE0DB9 /* ViewController.swift */,
@@ -128,6 +176,36 @@
 			path = BankWithMintTaskUITests;
 			sourceTree = "<group>";
 		};
+		B76072C125094F3000FE0DB9 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				B76072C8250950E200FE0DB9 /* GithubService.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		B76072C325094F4600FE0DB9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B76072C62509503300FE0DB9 /* githubApiModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B76072C425094F4E00FE0DB9 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		B76072C525094F6600FE0DB9 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B76072B825094A1D00FE0DB9 /* Build configuration list for PBXNativeTarget "BankWithMintTask" */;
 			buildPhases = (
+				4896ACFFAAA537D0B4C8D316 /* [CP] Check Pods Manifest.lock */,
 				B760728A25094A1900FE0DB9 /* Sources */,
 				B760728B25094A1900FE0DB9 /* Frameworks */,
 				B760728C25094A1900FE0DB9 /* Resources */,
+				2898BB9DE8BD6C04DC637298 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +232,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B76072BB25094A1D00FE0DB9 /* Build configuration list for PBXNativeTarget "BankWithMintTaskTests" */;
 			buildPhases = (
+				10601392A31D778DA9BF919E /* [CP] Check Pods Manifest.lock */,
 				B76072A025094A1D00FE0DB9 /* Sources */,
 				B76072A125094A1D00FE0DB9 /* Frameworks */,
 				B76072A225094A1D00FE0DB9 /* Resources */,
@@ -170,9 +251,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B76072BE25094A1D00FE0DB9 /* Build configuration list for PBXNativeTarget "BankWithMintTaskUITests" */;
 			buildPhases = (
+				C37AB246AE9397CC15F124DD /* [CP] Check Pods Manifest.lock */,
 				B76072AB25094A1D00FE0DB9 /* Sources */,
 				B76072AC25094A1D00FE0DB9 /* Frameworks */,
 				B76072AD25094A1D00FE0DB9 /* Resources */,
+				0C5C7944094B6DCB408B09FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,13 +337,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C5C7944094B6DCB408B09FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BankWithMintTask-BankWithMintTaskUITests/Pods-BankWithMintTask-BankWithMintTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BankWithMintTask-BankWithMintTaskUITests/Pods-BankWithMintTask-BankWithMintTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BankWithMintTask-BankWithMintTaskUITests/Pods-BankWithMintTask-BankWithMintTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10601392A31D778DA9BF919E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BankWithMintTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2898BB9DE8BD6C04DC637298 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BankWithMintTask/Pods-BankWithMintTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BankWithMintTask/Pods-BankWithMintTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BankWithMintTask/Pods-BankWithMintTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4896ACFFAAA537D0B4C8D316 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BankWithMintTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C37AB246AE9397CC15F124DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BankWithMintTask-BankWithMintTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B760728A25094A1900FE0DB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B760729625094A1900FE0DB9 /* ViewController.swift in Sources */,
+				B76072C72509503300FE0DB9 /* githubApiModel.swift in Sources */,
 				B760729225094A1900FE0DB9 /* AppDelegate.swift in Sources */,
+				B76072C9250950E200FE0DB9 /* GithubService.swift in Sources */,
 				B760729425094A1900FE0DB9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,11 +620,13 @@
 		};
 		B76072B925094A1D00FE0DB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC1D6BB50C82D3617660B3ED /* Pods-BankWithMintTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A6MYP8SFXB;
 				INFOPLIST_FILE = BankWithMintTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,11 +640,13 @@
 		};
 		B76072BA25094A1D00FE0DB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0BFE2E9EBA53D25958129D6 /* Pods-BankWithMintTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A6MYP8SFXB;
 				INFOPLIST_FILE = BankWithMintTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,6 +660,7 @@
 		};
 		B76072BC25094A1D00FE0DB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56A51126773902BDD6E65247 /* Pods-BankWithMintTaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +683,7 @@
 		};
 		B76072BD25094A1D00FE0DB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B001AE326287EB77B558D374 /* Pods-BankWithMintTaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +706,7 @@
 		};
 		B76072BF25094A1D00FE0DB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEBB0ACB510A605BD610AAE2 /* Pods-BankWithMintTask-BankWithMintTaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +727,7 @@
 		};
 		B76072C025094A1D00FE0DB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DD91A2690E757BD04D2787B /* Pods-BankWithMintTask-BankWithMintTaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
