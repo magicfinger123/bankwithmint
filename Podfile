@@ -11,6 +11,8 @@ pod 'Moya/RxSwift'
 pod 'TextFieldEffects'
 pod 'RxSwift'
 pod 'RxCocoa'
+pod 'KVNProgress'
+pod 'SVProgressHUD'
 
   target 'BankWithMintTaskTests' do
     inherit! :search_paths

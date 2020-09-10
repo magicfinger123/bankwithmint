@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.2.2)
+  - KVNProgress (2.3.5)
   - Moya/Core (14.0.0):
     - Alamofire (~> 5.0)
   - Moya/RxSwift (14.0.0):
@@ -11,35 +12,42 @@ PODS:
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
   - RxSwift (5.1.1)
+  - SVProgressHUD (2.2.5)
   - SwiftyJSON (5.0.0)
   - TextFieldEffects (1.6.0)
 
 DEPENDENCIES:
+  - KVNProgress
   - Moya/RxSwift
   - RxCocoa
   - RxSwift
+  - SVProgressHUD
   - SwiftyJSON
   - TextFieldEffects
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - KVNProgress
     - Moya
     - RxCocoa
     - RxRelay
     - RxSwift
+    - SVProgressHUD
     - SwiftyJSON
     - TextFieldEffects
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  KVNProgress: d7046cce142f1aeb740db39dc3cacfe910fac354
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
 
-PODFILE CHECKSUM: 82beda2f608483b201f1ec54c58b08ee689361cb
+PODFILE CHECKSUM: fd6c8ae21df8151e23d6293e039ae676cc821bd7
 
 COCOAPODS: 1.9.1

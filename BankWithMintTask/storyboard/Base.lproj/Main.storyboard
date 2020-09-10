@@ -10,7 +10,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BankWithMintTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -98,7 +97,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                     <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7L-Sn-8a4">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="z7L-Sn-8a4">
                                                     <rect key="frame" x="110" y="103" width="284" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="bck-Rf-Mcr"/>
@@ -144,6 +143,16 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="usc-PS-sbu">
+                                <rect key="frame" x="182" y="423" width="50" height="50"/>
+                                <color key="tintColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="O2E-pp-eXz"/>
+                                    <constraint firstAttribute="height" constant="50" id="UK2-fA-gY7"/>
+                                    <constraint firstAttribute="width" constant="50" id="UNS-nW-jIY"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="XMD-ci-1fv"/>
+                                </constraints>
+                            </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Commits from githubApi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9f-Z9-xgy">
                                 <rect key="frame" x="10" y="54" width="394" height="21"/>
                                 <constraints>
@@ -159,7 +168,9 @@
                             <constraint firstItem="7Kc-TX-aaK" firstAttribute="top" secondItem="J9f-Z9-xgy" secondAttribute="bottom" constant="10" id="EuU-C0-AmJ"/>
                             <constraint firstItem="J9f-Z9-xgy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="GXj-qd-Sxt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Kc-TX-aaK" secondAttribute="trailing" constant="5" id="H0B-4K-eVf"/>
+                            <constraint firstItem="usc-PS-sbu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JPc-tt-PDl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J9f-Z9-xgy" secondAttribute="trailing" constant="10" id="JTI-u8-b7A"/>
+                            <constraint firstItem="usc-PS-sbu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QoF-Pc-5Pu"/>
                             <constraint firstItem="J9f-Z9-xgy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="cKr-Sx-w56"/>
                             <constraint firstItem="7Kc-TX-aaK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="ll8-JH-vNR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7Kc-TX-aaK" secondAttribute="bottom" constant="10" id="qBU-PX-1hu"/>
@@ -167,9 +178,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="usc-PS-sbu" id="0BF-4R-44u"/>
                         <outlet property="tableViewCell" destination="7Kc-TX-aaK" id="Rgr-Xi-Y2X"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
